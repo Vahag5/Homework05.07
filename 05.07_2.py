@@ -16,10 +16,10 @@ try:
     print(fibo(1))  #0
     print(fibo(2))  #1
     print(fibo(-5))  # The Fibonacci series is not defined for negative numbers and 0
-except (ValueError,TypeError) as error:
+except (ValueError,NameError,TypeError) as error:
     print(error)
 
 try:
     print(fibo('notdigit'))
-except (ValueError,NameError,TypeError) as error:
+except (ValueError,NameError,TypeError) as error: #NameError@ grel em vortev kara anun gri cucich gri vor@ tiv chi
     print(error) #Invalid input. Expected an integer.
