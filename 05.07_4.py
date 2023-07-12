@@ -13,7 +13,7 @@ def binary_sr(ls:list, target:int):
 
     return -1
 
-ls1 = [1,5,6,8,9,4,2]
+ls1 = [1,2,3,4,5,6,7,8,9,10,15,18]
 tiv = 4
 ret = binary_sr(ls1,tiv)
 if ret == -1:
