@@ -5,16 +5,20 @@ def binary_sr(ls:list, target:int):
     while x <= y:
         center = (x+y) // 2
         if ls[center] == target:
-            return f'dzer uzac {target} tiv@ gtnvel a {center} indeqsov'
+            return center
         elif target > ls[center]:
             x = center + 1
         else:
             y = center - 1
 
-    return "Tiv@ bacakayum a listum"
+    return -1
 
 ls1 = [1,5,6,8,9,4,2]
-tiv = 5
+tiv = 4
+ret = binary_sr(ls1,tiv)
+if ret == -1:
+    print("Tiv@ bacakayum a listum")
+else:
+    print(f'dzer uzac {tiv} tiv@ gtnvel a {ret} indeqsov')
 
-print(binary_sr(ls1,tiv))
-#dzer uzac 5 tiv@ gtnvel a 1 indeqsov
+
