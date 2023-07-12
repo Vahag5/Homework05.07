@@ -17,4 +17,4 @@ ls1 = [1,5,6,8,9,4,2]
 tiv = 5
 
 print(binary_sr(ls1,tiv))
-
+#dzer uzac 5 tiv@ gtnvel a 1 indeqsov
